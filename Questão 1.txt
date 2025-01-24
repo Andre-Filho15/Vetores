@@ -1,0 +1,21 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro vetor[10]
+
+        // Ler dez elementos de um vetor unidimensional 
+		//do tipo inteiro e apresentar os valores lidos.
+        para (inteiro i = 0; i < 10; i++)
+        {
+            escreva("Digite o elemento ", i + 1, ": ")
+            leia(vetor[i])
+        }
+
+        escreva("Valores lidos: ")
+        para (inteiro i = 0; i < 10; i++)
+        {
+            escreva(vetor[i], " ")
+        }
+    }
+}

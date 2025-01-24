@@ -1,0 +1,28 @@
+programa
+{
+    funcao inicio()
+    {
+		
+		//Crie um algoritmo para ler 10 números inteiros 
+		//e mostrar os números pares deste vetor
+		
+        inteiro vetor[10]
+
+        // Para ler dez números inteiros e armazenar no vetor
+        para (inteiro i = 0; i < 10; i++)
+        {
+            escreva("Digite o número ", i + 1, ": ")
+            leia(vetor[i])
+        }
+
+        // Escrever os números pares do vetor
+        escreva("Números pares: ")
+        para (inteiro i = 0; i < 10; i++)
+        {
+            se (vetor[i] % 2 == 0)
+            {
+                escreva(vetor[i], " ")
+            }
+        }
+    }
+}

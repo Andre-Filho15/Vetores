@@ -1,0 +1,37 @@
+programa
+{
+    funcao inicio()
+    {
+		
+		//Faça um algoritmo para ler um vetor com 10 elementos 
+		//e inverter a posição destes elementos, 
+		//de tal modo que o primeiro elemento 
+		//venha a ser o último depois da inversão;
+		
+        inteiro vetor[10]
+        inteiro temp
+        inteiro n = 10
+
+        // Para ler os dez elementos do vetor
+        para (inteiro i = 0; i < n; i++)
+        {
+            escreva("Digite o elemento ", i + 1, ": ")
+            leia(vetor[i])
+        }
+
+        // Para inverter a posição dos elementos do vetor
+        para (inteiro i = 0; i < n / 2; i++)
+        {
+            temp = vetor[i]
+            vetor[i] = vetor[n - i - 1]
+            vetor[n - i - 1] = temp
+        }
+
+        // Escrever os vetores invertidos
+        escreva("Vetor invertido: ")
+        para (inteiro i = 0; i < n; i++)
+        {
+            escreva(vetor[i], " ")
+        }
+    }
+}

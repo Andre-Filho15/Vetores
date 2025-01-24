@@ -1,0 +1,28 @@
+programa
+{
+    funcao inicio()
+    {
+		
+		//Faça um algoritmo que leia 20 números e armazene em um vetor.
+		//Depois, some os 10 primeiros elementos deste vetor
+		
+        inteiro vetor[20]
+        inteiro soma = 0
+
+        // Para ler os vinte números inteiros e armazenar no vetor
+        para (inteiro i = 0; i < 20; i++)
+        {
+            escreva("Digite o número ", i + 1, ": ")
+            leia(vetor[i])
+        }
+
+        // Pata somar os 10 primeiros elementos do vetor
+        para (inteiro i = 0; i < 10; i++)
+        {
+            soma = soma + vetor[i]
+        }
+
+        // Para escrever a soma dos 10 primeiros elementos
+        escreva("A soma dos 10 primeiros elementos é: ", soma)
+    }
+}

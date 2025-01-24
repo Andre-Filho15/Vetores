@@ -1,0 +1,36 @@
+programa
+{
+    funcao inicio()
+    {
+		
+		//Ler oito elementos inteiros em um vetor unidimensional (A).
+		//Construir uma matriz B de mesma dimensão com os elementos da matriz A multiplicados por 3. 
+		//Após, apresente os números da matriz B. Exemplo: 
+		//o elemento B|0] deve ser implicado pelo elemento 
+        //A[0)*3, o elemento B[1] deve ser implicado 
+        //pelo elemento A[1]*3 e assim por diante, até a última posição:
+		
+        inteiro A[8]
+        inteiro B[8]
+
+        // Para ler os oito elementos do vetor A utizamos
+        para (inteiro i = 0; i < 8; i++)
+        {
+            escreva("Digite o elemento ", i + 1, ": ")
+            leia(A[i])
+        }
+
+        // para construir a matriz B com os elementos de A multiplicados por 3 usamos
+        para (inteiro i = 0; i < 8; i++)
+        {
+            B[i] = A[i] * 3
+        }
+
+        // E para mostrar os números da matriz 
+        escreva("Elementos da matriz B: ")
+        para (inteiro i = 0; i < 8; i++)
+        {
+            escreva(B[i], " ")
+        }
+    }
+}

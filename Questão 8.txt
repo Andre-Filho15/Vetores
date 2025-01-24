@@ -1,0 +1,53 @@
+programa
+{
+    funcao inicio()
+    {
+		
+		//Faça um algoritmo que leia 10 valores numéricos inteiros em um vetor e três valores 
+		//inteiros nas variáveis A B e C. Após a leitura, informe o número de vezes que os 
+        //números A, B e C apareceram no vetor
+		
+        inteiro vetor[10]
+        inteiro A, B, C
+        inteiro contadorA = 0
+        inteiro contadorB = 0
+        inteiro contadorC = 0
+
+        // Para ler os dez valores numéricos inteiros e armazenar no vetor
+        para (inteiro i = 0; i < 10; i++)
+        {
+            escreva("Digite o valor ", i + 1, ": ")
+            leia(vetor[i])
+        }
+
+        // Para ler os valores das variáveis A, B e C
+        escreva("Digite o valor de A: ")
+        leia(A)
+        escreva("Digite o valor de B: ")
+        leia(B)
+        escreva("Digite o valor de C: ")
+        leia(C)
+
+        // Para contar o número de vezes que A, B e C aparecem no vetor
+        para (inteiro i = 0; i < 10; i++)
+        {
+            se (vetor[i] == A)
+            {
+                contadorA++
+            }
+            se (vetor[i] == B)
+            {
+                contadorB++
+            }
+            se (vetor[i] == C)
+            {
+                contadorC++
+            }
+        }
+
+        // Para escrever o número de vezes que A, B e C aparecem no vetor
+        escreva("O número ", A, " aparece ", contadorA, " vezes no vetor.\n")
+        escreva("O número ", B, " aparece ", contadorB, " vezes no vetor.\n")
+        escreva("O número ", C, " aparece ", contadorC, " vezes no vetor.\n")
+    }
+}

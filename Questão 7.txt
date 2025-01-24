@@ -1,0 +1,71 @@
+programa
+{
+    funcao inicio()
+    {
+		
+		//Faça um algoritmo que leia 30 valores do tipo inteiro e armazene-os em um vetor.
+		//A seguir, o algoritmo deverá informar (1) todos os números pares que existem no vetor;
+		//(2) o menor e o maior valor existente no vetor; (3) quantos dos valores do vetor são maiores 
+		//que a média desses valores
+		
+        inteiro vetor[30]
+        inteiro soma = 0
+        real media
+        inteiro menor, maior
+        inteiro quantidadeMaioresQueMedia = 0
+
+        // Para ler os trinta números inteiros e armazenar no vetor
+        para (inteiro i = 0; i < 30; i++)
+        {
+            escreva("Digite o número ", i + 1, ": ")
+            leia(vetor[i])
+            soma = soma + vetor[i]
+        }
+
+        // Para calcular a média dos valores
+        media = soma / 30.0
+
+        // Para identificar o menor e maior com o primeiro valor do vetor
+        menor = vetor[0]
+        maior = vetor[0]
+
+        // Para informar todos os números pares do vetor
+        escreva("Números pares: ")
+        para (inteiro i = 0; i < 30; i++)
+        {
+            se (vetor[i] % 2 == 0)
+            {
+                escreva(vetor[i], " ")
+            }
+        }
+
+        // Para econtrar o menor e o maior valor no vetor
+        para (inteiro i = 0; i < 30; i++)
+        {
+            se (vetor[i] < menor)
+            {
+                menor = vetor[i]
+            }
+            se (vetor[i] > maior)
+            {
+                maior = vetor[i]
+            }
+        }
+
+        // Para contar quantos valores são maiores que a média
+        para (inteiro i = 0; i < 30; i++)
+        {
+            se (vetor[i] > media)
+            {
+                quantidadeMaioresQueMedia++
+            }
+        }
+
+        // Escrever o menor e o maior valor
+        escreva("\nMenor valor: ", menor)
+        escreva("\nMaior valor: ", maior)
+
+        // Escrever a quantidade de valores maiores que a média
+        escreva("\nQuantidade de valores maiores que a média: ", quantidadeMaioresQueMedia)
+    }
+}
